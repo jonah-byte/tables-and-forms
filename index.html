@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tables and Forms
+    </header>
+
+    <section>
+      <h2>Tables</h2>
+      <table>
+        <caption>My top 3 favorite things</caption>
+        <tr>
+          <th colspan="3">Top Things</th>
+        </tr>
+        <tr>
+          <th>Food</th>
+          <th>Activities</th>
+          <th>Musicians</th>
+        </tr>
+        <tr>
+          <td>Bibimbap</td>
+          <td>Skateboarding</td>
+          <td>Joy Division</td>
+        </tr>
+        <tr>
+          <td>Burgers</td>
+          <td>Videogames</td>
+          <td>The Smiths</td>
+        </tr>
+        <tr>
+          <td>Fried Chicken</td>
+          <td>Reading</td>
+          <td>Boy Pablo</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Other stuff I like</td>
+          <td >Tennis</td>
+          <td >Alternative Rock</td>
+        </tr>
+        <tr>
+          <td>Writing</td>
+          <td>The cure</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>Form</h3>
+        <form action="/actionphp.php" method="post">
+          <label for="name">Name:</label>
+          <input placeholder="Enter Your name" type="text" id="name">
+          <br>
+          <label for="password">Password</label>
+          <input type="password" id="password">
+          <br>
+          <br><br>
+
+          <fieldset>
+            <legend>Checkbox and radio buttons</legend>
+
+          <p>Pick your favorite meal:</p>
+          <input type="checkbox" id="breakfeast" name="name" value="breakfeast">
+          <label for="breakfeast">Breakfeast</label>
+
+          <br><br>
+
+          <input type="checkbox" id="lunch" name="name" value="lunch">
+          <label for="lunch">Lunch</label>
+
+          <br><br>
+
+          <input type="checkbox" id="dinner" name="name" value="Lunch">
+          <label for="dinner">Dinner</label>
+
+          <br><br>
+
+          <label for="height">Height:</label>
+          <input placeholder="Enter Your height" type="text" id="height" required>
+
+          <p>Languages</p>
+          <input type="radio" id="html" name="langlist" value="html">
+          <label for="html">HTML</label>
+
+          <br><br>
+
+          <input type="radio" id="CSS" name="langlist" value="CSS">
+          <label for="CSS">CSSS</label>
+
+          <br><br>
+
+          <input type="radio" id="JS" name="langlist" value="JS">
+          <label for="JS">Javascript</label>
+          </fieldset>
+          <br><br>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <br>
+
+          <fieldset>
+            <legend>Pickers and sliderz</legend>
+
+          <br><br>
+          <label for="today">Month picker</label>
+          <input type="month" id="today" name="month">
+          <br>
+
+          <label for="range">Slider</label>
+          <input type="range" id="range" name="range" min="0" max="10" value="0">
+          <br>
+
+          <br><br>
+
+          <label for="excitement">Excitement Level</label>
+          <meter id="excitement" name="meter" min="0" max="100" value="50"></meter>
+          <br>
+
+          <br><br>
+
+          <label for="rating">Rating</label>
+          <input type="number" id="rating" name="rating" min="0" max="100" step="5" value="0">
+          <br>
+
+          <br><br>
+
+          <label for="superpowers">Pick a superpower:</label>
+
+          <select name="superpowers" id="superpowers">
+            <option value="blank">--Please choose one--</option>
+            <option value="tele">Telekinesis</option>
+            <option value="strength">Super-strength</option>
+            <option value="fly">Flying</option>
+          </select>
+          <br><br>
+        </fieldset>
+
+          <input type="submit" value="SUBMIT">
+          <br>
+        </form>
+        <fieldset id="jd">
+          <legend>Shout out to Joy Division</legend>
+          <figure>
+            <img src="https://www.typeroom.eu/assets/original/2020/05/18/JoyDivision-UnknownPleasures-B1.jpg" alt="Joy Division">
+            <figcaption>One of the best albums ever made</figcaption>
+          </figure>
+        </fieldset>
+    </section>
+  </body>
+</html>
